@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    password: hatimhbch2003
+    url: jdbc:postgresql://localhost:5432/registration
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+# Resend API Configuration
+resend:
+  api:
+    key: ${RESEND_API_KEY:re_AQNaSiuz_489Bx85m1f1q7KwMqtufsUEB}
+  from:
+    email: noreply@mail.robenhod.com
+
+server:
+  port: 8080
+
+jwt:
+  secret: sgrrij4984t98h4hfewahfewajurAFW§fww4amfwaR$jfaw$jrjRErDSFS$fw43v4v4f4wfw4F§Qf3qf3fddsvtut
+  expiration: 8640000
+
+app:
+  url: http://localhost:8080
+logging:
+  level:
+    org.springframework.security: INFO
+    com.example.demo: DEBUG
